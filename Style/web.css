@@ -143,38 +143,46 @@ a.article:hover {
 
 .container {display: grid; 
      
-    grid-template-rows: auto; 
-    gap: 10px 10px 10px; 
+    grid-template-rows: 100px 1000px 100px; 
     grid-template-areas: 
     "Ylä-tunniste . . ."
       "Content . . ."
       "Ala-tunniste . . ."; 
+      border-radius: 5px;
+      background-color: #416916;
+     
   }
   .Ylä-tunniste { 
       grid-area: Ylä-tunniste; 
-      border: 2px solid;
-      border-color: #416916;
+      border: 4px solid;
+      border-color: #fafafa;
       border-radius: 5px;
       text-align: center ;
-      grid-row: 15fr;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      
     }
     
   .Content { 
       grid-area: Content; 
-      border: 2px solid;
+      border: 4px solid;
       border-radius: 5px;
-      border-color: #416916;
+      border-color: #fafafa;
       text-align: center;
-      grid-row: 100fr;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      
     }
 
   .Ala-tunniste { 
       grid-area: Ala-tunniste;
-      border: 2px solid;
+      border: 4px solid;
       border-radius: 5px; 
-      border-color: #416916;
+      border-color: #fafafa;
       text-align: center;
-      grid-row: 15fr;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      
     }
 
 /* ---------------------------------------------------
