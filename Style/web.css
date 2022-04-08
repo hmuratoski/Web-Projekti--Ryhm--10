@@ -141,6 +141,42 @@ a.article:hover {
     color: #fff !important;
 }
 
+.container {display: grid; 
+     
+    grid-template-rows: auto; 
+    gap: 10px 10px 10px; 
+    grid-template-areas: 
+    "Ylä-tunniste . . ."
+      "Content . . ."
+      "Ala-tunniste . . ."; 
+  }
+  .Ylä-tunniste { 
+      grid-area: Ylä-tunniste; 
+      border: 2px solid;
+      border-color: #416916;
+      border-radius: 5px;
+      text-align: center ;
+      grid-row: 15fr;
+    }
+    
+  .Content { 
+      grid-area: Content; 
+      border: 2px solid;
+      border-radius: 5px;
+      border-color: #416916;
+      text-align: center;
+      grid-row: 100fr;
+    }
+
+  .Ala-tunniste { 
+      grid-area: Ala-tunniste;
+      border: 2px solid;
+      border-radius: 5px; 
+      border-color: #416916;
+      text-align: center;
+      grid-row: 15fr;
+    }
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
