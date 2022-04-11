@@ -142,13 +142,13 @@ a.article:hover {
 }
 
 .container {display: grid; 
-     
-    grid-template-rows: 135px 500px 100px; 
+    grid-template-rows: 135px 500px 135px; 
     grid-template-areas: 
     "Ylä-tunniste . . ."
-      "Content . . ."
-      "Ala-tunniste . . ."; 
-      border-radius: 5px;
+    "Content . . ."
+    "Ala-tunniste . . ."; 
+    border-radius: 5px;
+    margin-left: 95px;
      
   }
   .Ylä-tunniste { 
@@ -175,7 +175,9 @@ a.article:hover {
       border-radius: 5px;
       border-color: black;
       text-align: center;
-      font-weight: bold;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding: 5px;
+      color: white;
       margin-top: 10px;
       margin-bottom: 10px;
       background-color: #416916;
