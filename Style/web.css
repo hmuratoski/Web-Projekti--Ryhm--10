@@ -143,7 +143,7 @@ a.article:hover {
 
 .container {display: grid; 
      
-    grid-template-rows: 135px 500px 100px; 
+    grid-template-rows: 135px 500px 135px; 
     grid-template-areas: 
     "Ylä-tunniste . . ."
       "Content . . ."
