@@ -209,15 +209,15 @@ a.article:hover {
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     #sidebar {
         margin-left: -250px;
     }
     #sidebar.active {
-        margin-left: 0;
+        margin-left: 0px;
     }
     #sidebarCollapse span {
-        display: none;
+      display: none;
     }
 }
 
