@@ -200,32 +200,15 @@ a.article:hover {
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     #sidebar {
         margin-left: -250px;
     }
     #sidebar.active {
-        margin-left: 0;
+        margin-left: 0px;
     }
     #sidebarCollapse span {
-        display: none;
+      display: none;
     }
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-   }
-   .kids {
-    height: 200px;
-    width: 200px;
-   }
-
-.luokat img {
-    max-width: 100%;
-    max-height: 100%;
-   }
-   .kids {
-    height: 200px;
-    width: 200px;
-   }
