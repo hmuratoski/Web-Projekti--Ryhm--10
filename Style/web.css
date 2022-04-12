@@ -161,7 +161,7 @@ a.article:hover {
       font-size: 70px;
       font-family: 'Times New Roman', Times, serif;
       font-weight: bold;
-      color: black;
+      color: white;
       text-shadow: 2px 2px green;
       text-decoration-line: underline;
       margin-top: 10px;
@@ -194,6 +194,7 @@ a.article:hover {
       margin-top: 10px;
       margin-bottom: 10px;
       background-color: #416916;
+      color: white
       
     }
 
