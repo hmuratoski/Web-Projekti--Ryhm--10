@@ -159,7 +159,6 @@ a.article:hover {
       border-radius: 5px;
       text-align: center;
       font-size: 70px;
-      font-family: 'Times New Roman', Times, serif;
       font-weight: bold;
       color: black;
       text-shadow: 2px 2px green;
@@ -167,6 +166,8 @@ a.article:hover {
       margin-top: 10px;
       margin-bottom: 10px;
       background-color: #416916;
+      font-family: 'Poppins', sans-serif;
+
       
     }
     
@@ -182,6 +183,8 @@ a.article:hover {
       margin-top: 10px;
       margin-bottom: 10px;
       background-color: #416916;
+      font-family: 'Poppins', sans-serif;
+
       
     }
 
@@ -194,6 +197,8 @@ a.article:hover {
       margin-top: 10px;
       margin-bottom: 10px;
       background-color: #416916;
+      font-family: 'Poppins', sans-serif;
+
       
     }
 
@@ -221,8 +226,9 @@ a.article:hover {
     }
     #sidebarCollapse span {
       display: none;
+   
     }
-}
+}     
 
 img {
     max-width: 100%;
@@ -241,3 +247,15 @@ img {
     height: 200px;
     width: 200px;
    }
+[class^="col"] {
+    border:  5px solid;
+    border-radius: 5px;
+    border-color: black;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #416916;
+ 
+  }
