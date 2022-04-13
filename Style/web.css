@@ -162,7 +162,6 @@ a.article:hover {
       font-weight: bold;
       color: white;
       text-shadow: 2px 2px green;
-      text-decoration-line: underline;
       margin-top: 10px;
       margin-bottom: 10px;
       background-color: #416916;
@@ -197,12 +196,8 @@ a.article:hover {
       margin-top: 10px;
       margin-bottom: 10px;
       background-color: #416916;
-<<<<<<< HEAD
       font-family: 'Poppins', sans-serif;
-
-=======
       color: white
->>>>>>> c58a003c5b74486128574d2ab1e27ebdbbd2ac65
       
     }
 
