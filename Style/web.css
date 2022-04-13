@@ -251,8 +251,15 @@ img {
     height: 200px;
     width: 200px;
    }
-<<<<<<< HEAD
-[class^="col"] {
+
+
+   
+   h3 {
+        
+       color: #416916;
+   }
+   
+   [class^="col"] {
     border:  5px solid;
     border-radius: 5px;
     border-color: black;
@@ -264,13 +271,3 @@ img {
     background-color: #416916;
  
   }
-=======
-
-
-   
-   h3 {
-        
-       color: #416916;
-   }
-   
->>>>>>> c58a003c5b74486128574d2ab1e27ebdbbd2ac65
