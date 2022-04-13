@@ -160,7 +160,7 @@ a.article:hover {
       text-align: center;
       font-size: 70px;
       font-weight: bold;
-      color: black;
+      color: white;
       text-shadow: 2px 2px green;
       text-decoration-line: underline;
       margin-top: 10px;
@@ -197,8 +197,12 @@ a.article:hover {
       margin-top: 10px;
       margin-bottom: 10px;
       background-color: #416916;
+<<<<<<< HEAD
       font-family: 'Poppins', sans-serif;
 
+=======
+      color: white
+>>>>>>> c58a003c5b74486128574d2ab1e27ebdbbd2ac65
       
     }
 
@@ -247,6 +251,7 @@ img {
     height: 200px;
     width: 200px;
    }
+<<<<<<< HEAD
 [class^="col"] {
     border:  5px solid;
     border-radius: 5px;
@@ -259,3 +264,13 @@ img {
     background-color: #416916;
  
   }
+=======
+
+
+   
+   h3 {
+        
+       color: #416916;
+   }
+   
+>>>>>>> c58a003c5b74486128574d2ab1e27ebdbbd2ac65
