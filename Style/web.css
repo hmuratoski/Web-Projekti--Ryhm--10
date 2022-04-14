@@ -61,7 +61,7 @@ a:focus {
     max-width: 250px;
     background: #416916;
     color: #fff;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 #sidebar.active {
@@ -90,7 +90,7 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: #416916;
     background: #fff;
 }
 
@@ -143,13 +143,13 @@ a.article:hover {
 
 .container {display: grid; 
 
-    grid-template-rows: 135px 500px 135px; 
+    grid-template-rows: 135px 800px 135px; 
     grid-template-areas: 
     "Ylä-tunniste . . ."
     "Content . . ."
     "Ala-tunniste . . ."; 
     border-radius: 5px;
-    margin-left: 95px;
+    margin-left: 140px;
      
   }
   .Ylä-tunniste { 
@@ -162,7 +162,7 @@ a.article:hover {
       font-weight: bold;
       color: white;
       text-shadow: 2px 2px green;
-      margin-top: 10px;
+      margin-top: 15px;
       margin-bottom: 10px;
       background-color: #416916;
       font-family: 'Poppins', sans-serif;
@@ -178,6 +178,7 @@ a.article:hover {
       text-align: center;
       padding: 5px;
       font-size: 20px;
+      font-weight: normal;
       color: white;
       margin-top: 10px;
       margin-bottom: 10px;
@@ -199,6 +200,7 @@ a.article:hover {
       font-family: 'Poppins', sans-serif;
       color: white;
       font-size: 20px;
+      font-weight: normal;
       
     }
 
@@ -217,16 +219,37 @@ a.article:hover {
     MEDIAQUERIES
 ----------------------------------------------------- */
 
+@media (max-width: 768px) {
+    .container {
+        margin-left: 5px;
+    }
+}
+
 @media (max-width: 576px) {
     #sidebar {
-        margin-left: -250px;
+        position: absolute;
+        display: contents;
+        font-size: 0;
+        padding-bottom: 9px;
+        color: #416916;
     }
-    #sidebar.active {
+    #sidebar:hover {
+        padding-bottom: 8px;
+        width: 150px;
+        font-size: 20px;
+    }
+/*    #sidebar.active {
         margin-left: 0px;
     }
     #sidebarCollapse span {
-      display: none;
+        display: none;
    
+    } */
+    img {
+        display: none;
+    }
+    .container {
+        margin-left: 20px;
     }
 }     
 
