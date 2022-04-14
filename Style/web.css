@@ -143,19 +143,20 @@ a.article:hover {
 
 .container {display: grid; 
 
-    grid-template-rows: 135px 800px 135px; 
+    grid-template-rows: 135px 625px 135px; 
     grid-template-areas: 
     "Ylä-tunniste . . ."
     "Content . . ."
     "Ala-tunniste . . ."; 
     border-radius: 5px;
     margin-left: 140px;
+    background-color: #416916;
      
   }
   .Ylä-tunniste { 
       grid-area: Ylä-tunniste; 
       border: 4px solid;
-      border-color: black;
+      border-color: white;
       border-radius: 5px;
       text-align: center;
       font-size: 70px;
@@ -174,7 +175,7 @@ a.article:hover {
       grid-area: Content; 
       border: 4px solid;
       border-radius: 5px;
-      border-color: black;
+      border-color: white;
       text-align: center;
       padding: 5px;
       font-size: 20px;
@@ -192,7 +193,7 @@ a.article:hover {
       grid-area: Ala-tunniste;
       border: 4px solid;
       border-radius: 5px; 
-      border-color: black;
+      border-color: white;
       text-align: center;
       margin-top: 10px;
       margin-bottom: 10px;
@@ -249,7 +250,7 @@ a.article:hover {
         display: none;
     }
     .container {
-        margin-left: 20px;
+        margin-left: 5px;
     }
 }     
 
