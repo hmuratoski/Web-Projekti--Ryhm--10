@@ -161,12 +161,12 @@ a.article:hover {
       text-align: center;
       font-size: 70px;
       font-weight: bold;
+      font-family: 'Poppins', sans-serif;
       color: white;
       text-shadow: 2px 2px green;
       margin-top: 15px;
       margin-bottom: 10px;
       background-color: #416916;
-      font-family: 'Poppins', sans-serif;
 
       
     }
@@ -180,11 +180,11 @@ a.article:hover {
       padding: 5px;
       font-size: 20px;
       font-weight: normal;
+      font-family: 'Poppins', sans-serif;
       color: white;
       margin-top: 10px;
       margin-bottom: 10px;
       background-color: #416916;
-      font-family: 'Poppins', sans-serif;
 
       
     }
