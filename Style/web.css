@@ -282,15 +282,4 @@ img {
        color: #416916;
    }
    
-   [class^="col"] {
-    border:  5px solid;
-    border-radius: 5px;
-    border-color: black;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #416916;
- 
-  }
+   
