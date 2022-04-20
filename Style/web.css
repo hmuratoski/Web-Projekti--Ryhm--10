@@ -150,8 +150,7 @@ a.article:hover {
     "Ylä-tunniste . . ."
     "Content . . ."
     "Ala-tunniste . . ."; 
-    border-radius: 5px;
-    margin-left: 140px;
+    border-radius: 10px;
     
     background-color: #416916;
      
@@ -313,3 +312,14 @@ img {
       transform: rotateY(360deg) 
     }
   } 
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+
