@@ -188,6 +188,6 @@ function startTimerLine(time){
 }
 function queCounter(index){
     //creating a new span tag and passing the question number and total question
-    let totalQueCounTag = '<span><p>'+ index +'</p> / <p>'+ questions.length +'</p> kysymystä</span>';
+    let totalQueCounTag = '<span><p>'+ index +'</p> / <p>'+ questions.length +'</p> </span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }

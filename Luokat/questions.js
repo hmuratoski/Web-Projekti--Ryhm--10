@@ -1,7 +1,7 @@
 let questions = [
     {
     numb: 1,
-    question: "Mikä oli Suomen alunperinen pääkaupunki?",
+    question: "Mikä oli Suomen alkuperäinen pääkaupunki?",
     answer: "Turku",
     options: [
       "Turku",
