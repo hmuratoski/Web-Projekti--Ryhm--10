@@ -490,7 +490,7 @@ footer button.show{
         color: #f1f1f1;
         background: #416916;
         border: 1px solid #b8daff;
-        height: 23px;
+        height: 25px;
         padding: 0 4px;
         border-radius: 5px;
         display: flex;
@@ -504,7 +504,7 @@ footer button.show{
         user-select: none;
     }
     .quiz_box header .timer .timer_sec{
-        font-size: 9px;
+        font-size: 20px;
         font-weight: 250;
         height: 15px;
         width: 27px;
@@ -520,7 +520,7 @@ footer button.show{
         position: absolute;
         bottom: 0px;
         left: 0px;
-        height: 3px;
+        height: 5px;
         background: #416916;
     }
     section{
@@ -650,12 +650,12 @@ footer button.show{
         transition: all 0.3s ease;
     }
     .result_box .icon{
-        font-size: 60px;
+        font-size: 0px;
         color:#416916;
         margin-bottom: 10px;
     }
     .result_box .complete_text{
-        font-size: 10px;
+        font-size: 15px;
         font-weight: 500;
     }
     .result_box .score_text span{
@@ -674,7 +674,7 @@ footer button.show{
     }
     .result_box .buttons button{
         margin: 0 5px;
-        height: 23px;
+        height: 30px;
         padding: 0 12px;
         font-size: 10px;
         font-weight: 250;
