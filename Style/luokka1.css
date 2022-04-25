@@ -1,15 +1,11 @@
+/*
+    DEMO STYLE
+*/
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-    background: url(../Kuvat/Lakeforpage.jpg);
-}
-
-.background-image {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 100vh;
+    background: #ccffdd;
 }
 
 p {
@@ -28,6 +24,28 @@ a:focus {
     transition: all 0.3s;
 }
 
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -39,31 +57,20 @@ a:focus {
 }
 
 #sidebar {
-    min-width: 50px;
-    max-width: 50px;
-    background: #416916;
-    color: #fff;
-    font-size: 0px;
-    transition: all 0.4s;
-    border-right: solid white;
-}
-
-#sidebar:hover {
     min-width: 250px;
     max-width: 250px;
-    font-size: 100%;
-    transition: all 0.4s;
-
+    background: #416916;
+    color: #fff;
+    transition: all 0.2s;
 }
 
 #sidebar.active {
     margin-left: -250px;
 }
 
-#sidebar.sidebar-header {
-    padding: 0px;
+#sidebar .sidebar-header {
+    padding: 20px;
     background:#416916;
-    
 }
 
 #sidebar ul.components {
@@ -80,7 +87,6 @@ a:focus {
     padding: 10px;
     font-size: 1.1em;
     display: block;
-    transition: all 0.04s;
 }
 
 #sidebar ul li a:hover {
@@ -88,9 +94,15 @@ a:focus {
     background: #fff;
 }
 
-/*a[data-toggle="collapse"] {
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #416916;
+}
+
+a[data-toggle="collapse"] {
     position: relative;
-}*/
+}
 
 .dropdown-toggle::after {
     display: block;
@@ -134,47 +146,66 @@ a.article:hover {
     grid-template-rows: 135px 610px 150px;
     */
     grid-template-areas: 
-
-    "Ylä-tunniste . . ."
-    "Content . . ."; 
-    border-radius: 10px;
     
-    /* background-color: #416916; */
+    "Ylä-tunniste . . ."
+    "Content . . ."
+    "Ala-tunniste . . ."; 
+    border-radius: 10px;
+    color: black;
+    background-color:darkolivegreen;
      
   }
   .Ylä-tunniste { 
       grid-area: Ylä-tunniste; 
       border: 4px solid;
       border-color: white;
-      border-radius: 50px 10px;
-      border-style: double;
+      border-radius: 5px;
       text-align: center;
-      font-size: 85px;
+      font-size: 70px;
       font-weight: bold;
       font-family: 'Poppins', sans-serif;
-      color: turquoise;
-      text-shadow: 3px 1px white;
+      color: white;
+      text-shadow: 2px 2px green;
       margin-top: 15px;
       margin-bottom: 10px;
+      background-color: #416916;
+
+      
+    }
+    
+  .Content { 
+      grid-area: Content; 
+      border: 4px solid;
+      border-radius: 5px;
+      border-color: white;
+      text-align: center;
+      padding: 5px;
+      font-size: 20px;
+      font-weight: normal;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #416916;
 
       
     }
 
-    .Content { 
-        grid-area: Content; 
-        text-align: center;
-        padding: 5px;
-        font-size: 20px;
-        font-weight: normal;
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        text-shadow: 3px 1px black;
-        margin-top: 10px;
-        margin-bottom: 10px;
-  
-        
-      }
-
+  .Ala-tunniste { 
+      grid-area: Ala-tunniste;
+      border: 4px solid;
+      border-radius: 5px; 
+      border-color: white;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #416916;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      font-size: 20px;
+      font-weight: normal;
+      
+    }
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -199,19 +230,24 @@ a.article:hover {
 
 @media (max-width: 576px) {
     #sidebar {
-        font-size: 0px;
+        position: absolute;
+        display: contents;
+        font-size: 0;
         padding-bottom: 9px;
-        color: white;
+        color: #416916;
     }
     #sidebar:hover {
         padding-bottom: 8px;
         width: 150px;
         font-size: 20px;
     }
-    #sidebar ul li a:hover {
-        color: #416916;
-        background: #fff;
+/*    #sidebar.active {
+        margin-left: 0px;
     }
+    #sidebarCollapse span {
+        display: none;
+   
+    } */
     img {
         display: none;
     }
