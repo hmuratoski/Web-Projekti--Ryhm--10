@@ -94,12 +94,6 @@ a:focus {
     background: #fff;
 }
 
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-    color: #fff;
-    background: #416916;
-}
-
 a[data-toggle="collapse"] {
     position: relative;
 }
