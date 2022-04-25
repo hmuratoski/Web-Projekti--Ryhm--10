@@ -3,13 +3,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: url(../Kuvat/Lakeforpage.jpg);
-}
-
-.background-image {
-    background-size: cover;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 p {
@@ -46,6 +42,7 @@ a:focus {
     font-size: 0px;
     transition: all 0.4s;
     border-right: solid white;
+    border-right-style: dashed;
 }
 
 #sidebar:hover {
@@ -88,10 +85,6 @@ a:focus {
     background: #fff;
 }
 
-/*a[data-toggle="collapse"] {
-    position: relative;
-}*/
-
 .dropdown-toggle::after {
     display: block;
     position: absolute;
@@ -129,18 +122,13 @@ a.article:hover {
     color: #fff !important;
 }
 
-.container {display: grid; 
-/*
-    grid-template-rows: 135px 610px 150px;
-    */
+.container {display: grid;
     grid-template-areas: 
 
     "Ylä-tunniste . . ."
     "Content . . ."; 
     border-radius: 10px;
     
-    /* background-color: #416916; */
-     
   }
   .Ylä-tunniste { 
       grid-area: Ylä-tunniste; 
@@ -157,23 +145,7 @@ a.article:hover {
       margin-top: 15px;
       margin-bottom: 10px;
 
-      
     }
-
-    .Content { 
-        grid-area: Content; 
-        text-align: center;
-        padding: 5px;
-        font-size: 20px;
-        font-weight: normal;
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        text-shadow: 3px 1px black;
-        margin-top: 10px;
-        margin-bottom: 10px;
-  
-        
-      }
 
 
 /* ---------------------------------------------------
