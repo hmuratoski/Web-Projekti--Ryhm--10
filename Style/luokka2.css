@@ -259,7 +259,60 @@ a.article:hover {
     margin-bottom: 10px;
     cursor: pointer;
     text-transform: capitalize;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    position: relative;
+    overflow: hidden;
 }
+.quiz-box .option-container .option.already-answered {
+    pointer-events: none;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.quiz-box .option-container .option.correct::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+@keyframes slideInLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.quiz-box .option-container .option.wrong::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+.quiz-box .option-container .option.correct::before {
+    color: #ffffff;
+}
+.quiz-box .option-container .option.correct {
+    color: #ffffff;
+}
+
 .quiz-box .btn {
     margin: 15px 0;
 }
@@ -274,6 +327,20 @@ a.article:hover {
     border-radius: 50%;
     margin-right: 3px;
     margin-top: 15px;
+}
+.quiz-box .answers-indicator div.correct {
+    background-color: white;
+    background-image: url(../Kuvat/Correct.png);
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.quiz-box .answers-indicator div.wrong {
+    background-color: white;
+    background-image: url(../Kuvat/Wrong.png);
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .result-box {
