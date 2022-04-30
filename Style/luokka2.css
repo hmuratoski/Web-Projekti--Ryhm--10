@@ -125,7 +125,7 @@ a.article:hover {
 }
 
 .container {display: grid;
-    /*background-color: #416916;*/
+    /* background-color: #416916; */
     grid-template-areas: 
 
     "Ylä-tunniste . . ."
@@ -145,8 +145,8 @@ a.article:hover {
       font-size: 85px;
       font-weight: bold;
       font-family: 'Poppins', sans-serif;
-      color: turquoise;
-      text-shadow: 3px 1px white;
+      color: #416916;
+      text-shadow: 2px 1px white;
       margin-top: 15px;
       margin-bottom: 10px;
 
@@ -171,7 +171,19 @@ a.article:hover {
     margin: 100px auto;
     padding: 30px;
     border-radius: 10px;
+    animation: fadeInRight 1s ease;
 }
+@keyframes fadeInRight {
+    0%{
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
 .custom-box::before,
 .custom-box::after {
     content: '';
@@ -283,7 +295,7 @@ a.article:hover {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: green;
+    background-color: rgb(68, 158, 68);
     z-index: -1;
     animation: slideInLeft .5s ease forwards;
 }
@@ -302,14 +314,14 @@ a.article:hover {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: red;
+    background-color: rgb(197, 75, 75);
     z-index: -1;
     animation: slideInLeft .5s ease forwards;
 }
-.quiz-box .option-container .option.correct::before {
+.quiz-box .option-container .option.correct {
     color: #ffffff;
 }
-.quiz-box .option-container .option.correct {
+.quiz-box .option-container .option.wrong {
     color: #ffffff;
 }
 
@@ -396,6 +408,10 @@ a.article:hover {
     .container {
         margin-left: 5px;
     }
+    .result-box .btn {
+        margin-bottom: 10px;
+    }
+
 }
 
 @media (max-width: 576px) {

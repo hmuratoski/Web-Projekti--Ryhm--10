@@ -46,13 +46,13 @@
         <div class="container">
             <div class="Ylä-tunniste">LUOKKA 2</div>
             <div class="Content">
-                <div class="home-box custom-box hide">
-                    <h3>Ohjeet: <br>Paina oikeaa vastausta.</h3>
+                <div class="home-box custom-box ">
+                    <h3>Ohjeet: Paina oikeaa vastausta</h3>
                     <p>Kysymysten määrä: <span class="total-questions">5</span></p>
-                    <button type="button" class="btn">Aloita tietovisa</button>
+                    <button type="button" class="btn" onclick="startQuiz()">Aloita tietovisa</button>
                 </div>
 
-                <div class="quiz-box custom-box ">
+                <div class="quiz-box custom-box hide">
                     <div class="question-number"></div>
                     <div class="question-text">
                         
@@ -73,31 +73,31 @@
                     <table>
                         <tr>
                             <td>Kysymyksiä</td>
-                            <td><span class="total-question">5</span></td>
+                            <td><span class="total-question"></span></td>
                         </tr>
                         <tr>
                             <td>Yrityksiä</td>
-                            <td><span class="total-attempt">4</span></td>
+                            <td><span class="total-attempt"></span></td>
                         </tr>
                         <tr>
                             <td>Oikein</td>
-                            <td><span class="total-correct">4</span></td>
+                            <td><span class="total-correct"></span></td>
                         </tr>
                         <tr>
                             <td>Väärin</td>
-                            <td><span class="total-wrong">1</span></td>
+                            <td><span class="total-wrong"></span></td>
                         </tr>
                         <tr>
                             <td>Prosentti</td>
-                            <td><span class="percentage">80.00%</span></td>
+                            <td><span class="percentage"></span></td>
                         </tr>
                         <tr>
                             <td>Tuloksesi</td>
-                            <td><span class="total-score">4 / 5</span></td>
+                            <td><span class="total-score"></span></td>
                         </tr>
                     </table>
-                    <button type="button" class="btn">Yritä uudelleen</button>
-                    <button type="button" class="btn">Alkuun</button>
+                    <button type="button" class="btn" onclick="tryAgainQuiz()">Yritä uudelleen</button>
+                    <button type="button" class="btn" onclick="goToHome()">Alkuun</button>
                 </div>
 
             </div>
