@@ -223,25 +223,27 @@ a.article:hover {
 
 @media (max-width: 576px) {
     #sidebar {
-        position: absolute;
-        display: contents;
+        min-width: 50px;
+        max-width: 50px;
         font-size: 0;
         padding-bottom: 9px;
-        color: #416916;
+        color: white;
     }
     #sidebar:hover {
         padding-bottom: 8px;
-        width: 150px;
+        min-width: 150px;
+        max-width: 150px;
         font-size: 20px;
+        transition: all 0.4s;
     }
-/*    #sidebar.active {
-        margin-left: 0px;
+    #sidebar ul li a {
+        transition: all 0.05s;
     }
-    #sidebarCollapse span {
-        display: none;
-   
-    } */
-    img {
+    #sidebar ul li a:hover {
+        color: #416916;
+        background: #fff;
+    }
+    .luokat img {
         display: none;
     }
     .container {
