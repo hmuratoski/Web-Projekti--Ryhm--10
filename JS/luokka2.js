@@ -26,6 +26,31 @@ const quiz = [
         q:'Mikä näistä ei ole Suomessa sijaitseva kaupunki?',
         options: ['helsinki','rovaniemi','oulu','pietari'],
         answer:3
+    },
+    {
+        q:'Missä maakunnassa sijaitsee Jyväskylä?',
+        options: ['pirkanmaa','uusimaa','keski-Suomi','lappi'],
+        answer:2
+    },
+    {
+        q:'Mikä joki virtaa Turun läpi?',
+        options: ['aurajoki','pyhäjoki','karjalajoki','pielisjoki'],
+        answer:0
+    },
+    {
+        q:'Mikä näistä maista ei kuulu pohjoismaihin?',
+        options: ['ruotsi','suomi','viro','tanska'],
+        answer:2
+    },
+    {
+        q:'Mikä on Ruotsin pääkaupunki?',
+        options: ['helsinki','malmö','tukholma','oslo'],
+        answer:2
+    },
+    {
+        q:'Mikä seuraavista kaupungeista on pohjoisin?',
+        options: ['rovaniemi','lahti','kuopio','oulu'],
+        answer:0
     }
 ]
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -37,6 +62,7 @@ const answersIndicatorContainer = document.querySelector(".answers-indicator");
 const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
+const questionLimit = 5;
 
 let questionCounter = 0;
 let currentQuestion;
@@ -56,7 +82,7 @@ function setAvailableQuestions() {
 // Set question number, question and options -----------------------------------------------------------------------------------------------------------
 function getNewQuestion() {
     // Question number
-    questionNumber.innerHTML = "Kysymys " + (questionCounter + 1) + " / " + quiz.length;
+    questionNumber.innerHTML = "Kysymys " + (questionCounter + 1) + " / " + questionLimit;
     
     // Question text
     // Get random question
@@ -139,7 +165,7 @@ function unclickableOptions() {
 
 function answersIndicator() {
     answersIndicatorContainer.innerHTML = '';
-    const totalQuestion = quiz.length;
+    const totalQuestion = questionLimit;
     for (let i=0; i<totalQuestion; i++) {
         const indicator = document.createElement("div");
         answersIndicatorContainer.appendChild(indicator);
@@ -151,7 +177,7 @@ function updateAnswerIndicator(markType) {
 }
 
 function next() {
-    if (questionCounter === quiz.length) {
+    if (questionCounter === questionLimit) {
         console.log("quiz over")
         quizOver();
     }
@@ -171,19 +197,20 @@ function quizOver() {
 
 // Get the quiz result --------------------------------------------------------------------------------------------------------------------------------------------
 function quizResult() {
-    resultBox.querySelector(".total-question").innerHTML = quiz.length;
+    resultBox.querySelector(".total-question").innerHTML = questionLimit;
     resultBox.querySelector(".total-attempt").innerHTML = attempt;
     resultBox.querySelector(".total-correct").innerHTML = correctAnswers;
     resultBox.querySelector(".total-wrong").innerHTML = attempt - correctAnswers;
-    const percentage = (correctAnswers/quiz.length)*100;
+    const percentage = (correctAnswers/questionLimit)*100;
     resultBox.querySelector(".percentage").innerHTML = percentage.toFixed(2) + "%";
-    resultBox.querySelector(".total-score").innerHTML = correctAnswers + " / " + quiz.length;
+    resultBox.querySelector(".total-score").innerHTML = correctAnswers + " / " + questionLimit;
 }
 
 function resetQuiz() {
     questionCounter = 0;
     correctAnswers = 0;
     attempt = 0;
+    availableQuestions = [];
 }
 
 function tryAgainQuiz() {
@@ -217,4 +244,8 @@ function startQuiz() {
     getNewQuestion();
     // To create indicator of answers
     answersIndicator();
+}
+
+window.onload = function () {
+    homeBox.querySelector(".total-questions").innerHTML = questionLimit;
 }
