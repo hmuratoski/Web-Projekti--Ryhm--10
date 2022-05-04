@@ -80,10 +80,10 @@ function clearStatusClass(element){
 }
 const questions =  [
     {
-        question: " What is 2 + 2??  " ,
+        question: "Mikä on Suomen pääkaupunki?" ,
         answers: [
-            { text: " 4 ", correct: true } ,
-            {text: " 22 ", correct: false }
+            { text: "Helsinki", correct: true }
+            {text: "Kuopio", correct: false }
         ]
     }
 ]
