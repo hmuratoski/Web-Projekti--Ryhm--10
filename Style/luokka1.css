@@ -91,46 +91,7 @@ a:focus {
     background: #fff;
 }
 
-a[data-toggle="collapse"] {
-    position: relative;
-}
 
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #416916;
-}
-
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-a.download {
-    background: #fff;
-    color: #7386D5;
-}
-
-a.article,
-a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
-}
 
 .container {display: grid; 
 /*
@@ -148,53 +109,20 @@ a.article:hover {
 }
   .Ylä-tunniste { 
       grid-area: Ylä-tunniste; 
-      border: 4px solid;
+      border: 1px solid;
       border-color: darkgreen;
-      border-radius: 5px;
+      border-radius: 2px;
       text-align: center;
-      font-size: 70px;
+      font-size: 40px;
       font-weight: bold;
       font-family: 'Poppins', sans-serif;
-      color: black;
-      text-shadow: 2px 2px green;
+      color: darkolivegreen;
+      text-shadow: 2px 2px burlywood;
       margin-top: 15px;
       margin-bottom: 10px;
-      background-color: #416916;
+      background-color: lightseagreen;
     }
     
-  .Content { 
-      grid-area: Content; 
-      border: 4px solid;
-      border-radius: 5px;
-      border-color: white;
-      text-align: center;
-      padding: 5px;
-      font-size: 20px;
-      font-weight: normal;
-      font-family: 'Poppins', sans-serif;
-      color: white;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      background-color: #416916;
-
-      
-    }
-
-  .Ala-tunniste { 
-      grid-area: Ala-tunniste;
-      border: 4px solid;
-      border-radius: 5px; 
-      border-color: white;
-      text-align: center;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      background-color: #416916;
-      font-family: 'Poppins', sans-serif;
-      color: white;
-      font-size: 20px;
-      font-weight: normal;
-      
-    }
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -300,11 +228,11 @@ a.article:hover {
     padding: 5px 10px;
     color: white;
     outline: none;
-    background-color: darkblue;
+    background-color: darkgreen;
 }
 
 .btn:hover {
-    border-color: black
+    border-color: black;
 }
 
 .btn.correct {
