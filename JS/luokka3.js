@@ -1,10 +1,3 @@
-
-  $(document).ready(function () {
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-    });
-});
-
 (function(){
     function buildQuiz(){
       // variable to store the HTML output
