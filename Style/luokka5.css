@@ -92,6 +92,12 @@ h3 {
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
+.start_btn:hover {
+
+    -webkit-box-shadow: 5px 5px 5px 5px #036040;;
+    box-shadow: 5px 5px 5px 5px #036040;;
+    
+}
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
@@ -111,6 +117,11 @@ h3 {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+
+}
+.info_box:hover{
+    -webkit-box-shadow: 5px 5px 5px 5px #036040;;
+    box-shadow:  5px 5px 5px 5px #036040;;  
 }
 .info_box .info-title{
     height: 60px;
@@ -163,6 +174,10 @@ h3 {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+}
+.quiz_box:hover{
+    -webkit-box-shadow: 5px 5px 5px 5px #036040;;
+    box-shadow:  5px 5px 5px 5px #036040;;   
 }
 .quiz_box header{
     position: relative;
@@ -342,6 +357,10 @@ footer button.show{
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+}
+.result_box:hover{
+    -webkit-box-shadow: 5px 5px 5px 5px #036040;;
+    box-shadow:  5px 5px 5px 5px #036040;;  
 }
 .result_box .icon{
     font-size: 100px;
