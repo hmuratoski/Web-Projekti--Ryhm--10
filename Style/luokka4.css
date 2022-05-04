@@ -1,0 +1,480 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #416916;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #416916;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background:#416916;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #416916;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #416916;
+    background: #fff;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #416916;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+.container {display: grid; 
+/*
+    grid-template-rows: 135px 610px 150px;
+    */
+    grid-template-areas: 
+    
+    "Ylä-tunniste . . ."
+    "Content . . ."
+    "Ala-tunniste . . ."; 
+    border-radius: 10px;
+    
+    background-color: #416916;
+     
+  }
+  .Ylä-tunniste { 
+      grid-area: Ylä-tunniste; 
+      border: 4px solid;
+      border-color: white;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 70px;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      text-shadow: 2px 2px green;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      background-color: #416916;
+
+      
+    }
+    
+  .Content { 
+      grid-area: Content; 
+      border: 4px solid;
+      border-radius: 5px;
+      border-color: white;
+      text-align: center;
+      padding: 5px;
+      font-size: 20px;
+      font-weight: normal;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #416916;
+
+      
+    }
+
+  .Ala-tunniste { 
+      grid-area: Ala-tunniste;
+      border: 4px solid;
+      border-radius: 5px; 
+      border-color: white;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #416916;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      font-size: 20px;
+      font-weight: normal;
+      
+    }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-shadow: #fff;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+
+main{
+  width: 1500px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../Kuvat/landscape-5688393_1920.jpg');
+  background-color : #416916;
+  background-size: center;
+  background-position: center;
+}
+
+.game-quiz-container{
+  width: 700px;
+  background-color: rgba(255, 255, 255, 0.87);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transform: translate(0%, 0%);
+
+}
+
+.game-details-container{
+  width: 80%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.game-details-container h1{
+  font-size: 1.2rem;
+}
+
+.game-question-container{
+  width: 80%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid darkgray;
+  border-radius: 25px;
+}
+
+.game-question-container h1{
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 3px;
+}
+
+.game-options-container{
+  width: 80%;
+  height: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.game-options-container span{
+  width: 45%;
+  height: 3rem;
+  border: 2px solid darkgray;
+  border-radius: 20px;
+  overflow: hidden;
+}
+span label{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-weight: 600;
+  color: rgb(22, 22, 22);
+}
+
+span label:hover{
+  -ms-transform: scale(1.12);
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
+  color: white;
+}
+
+input[type="radio"] {
+  position: relative;
+  display: none;
+}
+
+
+input[type=radio]:checked ~ .option {
+  background: paleturquoise;
+}
+
+.next-button-container{
+  width: 50%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.next-button-container button{
+  width: 15rem;
+  height: 2rem;
+  border-radius: 10px;
+  background: none;
+  color: rgb(25, 25, 25);
+  font-weight: 600;
+  border: 2px solid gray;
+  cursor: pointer;
+  outline: none;
+}
+.next-button-container button:hover{
+  background-color: rgb(11, 155, 54);
+}
+
+.modal-container{
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  -webkit-animation: fadeIn 1.2s ease-in-out;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.modal-content-container{
+  height: 20rem;
+  width: 25rem;
+  background-color: rgb(52, 175, 58);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 25px;
+}
+
+.modal-content-container h1{
+  font-size: 1.3rem;
+  height: 3rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.grade-details{
+  width: 15rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.grade-details p{
+  color: white;
+  text-align: center;
+}
+
+.modal-button-container{
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-button-container button{
+  width: 10rem;
+  height: 2rem;
+  background: none;
+  outline: none;
+  border: 1px solid rgb(252, 242, 241);
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.modal-button-container button:hover{
+  background-color: rgb(83, 82, 82);
+}
+
+@media(min-width : 300px) and (max-width : 350px){
+  .game-quiz-container{
+      width: 90%;
+      height: 80vh;
+   }
+   .game-details-container h1{
+      font-size: 0.8rem;
+   }
+
+   .game-question-container{
+      height: 6rem;
+   }
+   .game-question-container h1{
+     font-size: 0.9rem;
+  }
+
+  .game-options-container span{
+      width: 90%;
+      height: 2.5rem;
+  }
+  .game-options-container span label{
+      font-size: 0.8rem;
+  }
+  .modal-content-container{
+      width: 90%;
+      height: 25rem;
+  }
+
+  .modal-content-container h1{
+      font-size: 1.2rem;
+  }
+}
+
+@media(min-width : 350px) and (max-width : 700px){
+ .game-quiz-container{
+     width: 90%;
+     height: 80vh;
+  }
+  .game-details-container h1{
+      font-size: 1rem;
+  }
+
+  .game-question-container{
+      height: 8rem;
+  }
+
+  .game-question-container h1{
+      font-size: 0.9rem;
+   }
+
+  .game-options-container span{
+      width: 90%;
+  }
+  .modal-content-container{
+      width: 90%;
+      height: 25rem;
+  }
+  .modal-content-container h1{
+      font-size: 1.2rem;
+  }
+}
+
+
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
