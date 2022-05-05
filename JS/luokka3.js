@@ -1,4 +1,4 @@
-
+(function(){
   function buildQuiz(){
     // variable to store the HTML output
     const output = [];
@@ -70,71 +70,94 @@
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
   }
 
-  const quizContainer = document.getElementById('quiz1');
+  const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
   const myQuestions = [
-      {
-        question: "Montako jalkaa hyönteisellä on?",
+    {
+      question: "Montako jalkaa hyönteisellä on?",
+      answers: {
+        a: "4",
+        b: "8",
+        c: "6"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Moniko osainen ruumis hyönteisellä on?",
+      answers: {
+        a: "3",
+        b: "4",
+        c: "5"
+      },
+      correctAnswer: "a"
+    },
+    {
+        question: "Mihin osaan hyönteisen kaikki jalat ovat kiinnittyneet?",
         answers: {
-          a: "4",
-          b: "8",
-          c: "6"
+          a: "Alaruumiiseen",
+          b: "Päähän",
+          c: "Keskiruumiiseen"
         },
         correctAnswer: "c"
       },
       {
-        question: "Moniko osainen ruumis hyönteisellä on?",
+        question: "Minkä kasvin lehdet on yleensä kolmen ryhmissä",
         answers: {
-          a: "3",
-          b: "4",
-          c: "5"
+          a: "Valkoapila",
+          b: "Pihasaunio",
+          c: "Pihatatar"
         },
         correctAnswer: "a"
-      },
-      {
-          question: "Mihin osaan kaikki jalat ovat kiinnittyneet?",
-          answers: {
-            a: "Alaruumiiseen",
-            b: "Päähän",
-            c: "Keskiruumiiseen"
-          },
-          correctAnswer: "c"
-        },
-        {
-          question: "Minkä kasvin lehdet on yleensä kolmen ryhmissä",
-          answers: {
-            a: "Valkoapila",
-            b: "Pihasaunio",
-            c: "Pihatatar"
-          },
-          correctAnswer: "a"
-        },{
-          question: "Minkä kukan kukka muistuttaa voikukkaa?",
-          answers: {
-            a: "Valkoapila",
-            b: "Syysmaitiainen",
-            c: "Pihatatar"
-            
-          },
-          correctAnswer: "b"
-        },
-      {
-        question: "Mikä on vanha lääkekasvi jonka lehtiä voi käyttää laastarina?",
+      },{
+        question: "Minkä kukan kukka muistuttaa voikukkaa?",
         answers: {
           a: "Valkoapila",
           b: "Syysmaitiainen",
-          c: "piharatamo",
-          d: "Voikukka"
+          c: "Pihatatar"
+          
         },
-        correctAnswer: "c"
-        
-      }
+        correctAnswer: "b"
+      },
+    {
+      question: "Mikä on vanha lääkekasvi jonka lehtiä voi käyttää laastarina?",
+      answers: {
+        a: "Valkoapila",
+        b: "Syysmaitiainen",
+        c: "piharatamo",
+        d: "Voikukka"
+      },
+      correctAnswer: "c"
       
-    ];
-  
-  
-    buildQuiz();
-  
-    // Event listeners
-    submitButton.addEventListener('click', showResults);
+    }
+    
+  ];
+
+
+  buildQuiz();
+
+  // Event listeners
+  submitButton.addEventListener('click', showResults);
+})();
+
+
+document.getElementById("answer").onclick = validate;
+function validate() {
+    var checkbox;
+    var i;
+    var right;
+    checkboxes = document.getElementById("question1").getElementsByTagName("input");
+
+    right = false;
+    for(i = 0; i < checkboxes.length; i++) {
+        if(checkboxes[i].value == "right" && checkboxes[i].checked == true) {
+          right = true;
+        }
+    }
+
+    if(right) {
+        alert("You answered correctly");
+    } else {
+        alert("Wrong answer");
+    }
+}
