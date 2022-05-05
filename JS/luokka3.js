@@ -93,7 +93,7 @@
       correctAnswer: "a"
     },
     {
-        question: "Mihin osaan kaikki jalat ovat kiinnittyneet?",
+        question: "Mihin osaan hyönteisen kaikki jalat ovat kiinnittyneet?",
         answers: {
           a: "Alaruumiiseen",
           b: "Päähän",
