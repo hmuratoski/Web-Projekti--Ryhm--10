@@ -75,7 +75,6 @@ function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
 }
-<<<<<<< HEAD:JS/luokka1.js
 
 const questions = [ 
 
@@ -113,15 +112,3 @@ const questions = [
         }
       ]
   
-=======
-const questions = [
-    {
-        question: "Mikä on Suomen pääkaupunki?",
-        answer: [
-            { text: "Helsinki", correct: true },
-            { text: "Kuopio", correct: false }
-        ]
-    }
-]
-
->>>>>>> fba2d4653adf4db8996ccb94b463bf554cb5a73f:Luokat/script.js
