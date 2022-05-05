@@ -82,7 +82,7 @@ function setAvailableQuestions() {
 // Set question number, question and options -----------------------------------------------------------------------------------------------------------
 function getNewQuestion() {
     // Question number
-    questionNumber.innerHTML = "Kysymys " + (questionCounter + 1) + " / " + questionLimit;
+    questionNumber.innerHTML = "Kysymys " + (questionCounter + 1) + "/" + questionLimit;
     
     // Question text
     // Get random question
@@ -202,8 +202,8 @@ function quizResult() {
     resultBox.querySelector(".total-correct").innerHTML = correctAnswers;
     resultBox.querySelector(".total-wrong").innerHTML = attempt - correctAnswers;
     const percentage = (correctAnswers/questionLimit)*100;
-    resultBox.querySelector(".percentage").innerHTML = percentage.toFixed(2) + "%";
-    resultBox.querySelector(".total-score").innerHTML = correctAnswers + " / " + questionLimit;
+    resultBox.querySelector(".percentage").innerHTML = percentage + "%";
+    resultBox.querySelector(".total-score").innerHTML = correctAnswers + "/" + questionLimit;
 }
 
 function resetQuiz() {

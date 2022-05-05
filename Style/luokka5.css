@@ -1,7 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #ccffdd;
-    background-image: url(../Kuvat/luokka5\ tausta.jpg);
+    background-image: url(../Kuvat/students-3518726_960_720.webp);
     background-position: center center;
     background-attachment: fixed;
 }
@@ -393,6 +393,27 @@ footer button.show{
 .buttons button.quit:hover{
     color: #fff;
     background: #416916;
+}
+
+/*HOOVERIT*/
+
+.info_box:hover{
+    -webkit-box-shadow: 5px 5px 5px 5px #036040;
+    box-shadow:  5px 5px 5px 5px #036040; 
+}
+.quiz_box:hover{
+    -webkit-box-shadow: 5px 5px 5px 5px #036040;
+    box-shadow:  5px 5px 5px 5px #036040;   
+}
+.result_box:hover{
+    -webkit-box-shadow: 5px 5px 5px 5px #036040;
+    box-shadow:  5px 5px 5px 5px #036040;  
+}
+.start_btn:hover {
+
+    -webkit-box-shadow: 5px 5px 5px 5px #036040;;
+    box-shadow: 5px 5px 5px 5px #036040;;
+
 }
 /* ---------------------------------------------------
   MEDIA QUERY --MOBILE!
