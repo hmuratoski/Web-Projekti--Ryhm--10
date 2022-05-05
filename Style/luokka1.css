@@ -1,261 +1,85 @@
-
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #ccffdd;
-}
-
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
-}
-
-a,
-a:hover,
-a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.navbar {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
-}
-
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
-}
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
-
-.wrapper {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
-}
-
-#sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background: #416916;
-    color: #fff;
-    transition: all 0.2s;
-}
-
-#sidebar.active {
-    margin-left: -250px;
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background:#416916;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #416916;
-}
-
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
-}
-
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-
-#sidebar ul li a:hover {
-    color: #416916;
-    background: #fff;
-}
-
-
-
-.container {display: grid; 
-/*
-    grid-template-rows: 135px 610px 150px;
-    */
-    grid-template-areas: 
-    
-    "Ylä-tunniste . . ."
-    "Content . . ."
-    "Ala-tunniste . . ."; 
-    border-radius: 10px;
-    
-    background-color: #416916;
-     
-}
-  .Ylä-tunniste { 
-      grid-area: Ylä-tunniste; 
-      border: 1px solid;
-      border-color: darkgreen;
-      border-radius: 2px;
-      text-align: center;
-      font-size: 40px;
-      font-weight: bold;
-      font-family: 'Poppins', sans-serif;
-      color: darkolivegreen;
-      text-shadow: 2px 2px burlywood;
-      margin-top: 15px;
-      margin-bottom: 10px;
-      background-color: lightseagreen;
-    }
-    
-
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-
-#content {
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-}
-
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-
-@media (max-width: 768px) {
-    .container {
-        margin-left: 5px;
-    }
-}
-
-@media (max-width: 576px) {
-    #sidebar {
-        position: absolute;
-        display: contents;
-        font-size: 0;
-        padding-bottom: 9px;
-        color: #416916;
-    }
-    #sidebar:hover {
-        padding-bottom: 8px;
-        width: 150px;
-        font-size: 20px;
-    }
-        
-
-.luokat img {
-    max-width: 100%;
-    max-height: 100%;
-   }
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+  }
   
-   h3{
-       color:#00008b
-   }
-
-   div .Ylä-tunniste {
-       color:darkgreen
-   }
-
-   div .Ylä-tunniste {
-        background-color: goldenrod;
-   }
-
-   *,*::before, *::after {
-       box-sizing: border-box;
-       font-family: Gotham Rounder;
-   }
-
-   :root {
-       --hue-neutral: 200;
-       --hue-wrong: 0;
-       --hue-correct: 145;
-   }
-
-   body{
-       --hue: var(--hue-neutral);
-       padding: 0;
-       margin: 0;
-       display: flex;
-       width: 100vw;
-       height: 100vh;
-       justify-content: center;
-       align-items: center;
-       background-color: hs1(var(--hue), 100%, 20%);
-   }
-
-   body.correct {
-       --hue: var(--hue-correct);
-   }
-
-   .container {
-       width: 800px;
-       max-width: 80%;
-       background-color: white;
-       border-radius: 5px;
-       padding: 10px;
-       box-shadow: 0 0 10px;
-    }
-}
-.btn-grid {
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+  
+  body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+  }
+  
+  body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+  
+  .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin: 20px 0;
-}
-
-.btn {
-    --hue: varm(--hue-neutral);
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral);
     border: 1px solid hsl(var(--hue), 100%, 30%);
     background-color: hsl(var(--hue), 100%, 50%);
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
     outline: none;
-    background-color: darkgreen;
-}
-
-.btn:hover {
+  }
+  
+  .btn:hover {
     border-color: black;
-}
-
-.btn.correct {
+  }
+  
+  .btn.correct {
     --hue: var(--hue-correct);
     color: black;
-}
-
-.btn.wrong {
+  }
+  
+  .btn.wrong {
     --hue: var(--hue-wrong);
-}
-
-.start-btn, .next-btn {
-    font-size: 1,5rem;
+  }
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
-}
-
-.controls {
+  }
+  
+  .controls {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hide {
+  }
+  
+  .hide {
     display: none;
-}
+  }
