@@ -140,11 +140,11 @@ function showResult(){
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
     else if(userScore > 1){ // if user scored more than 1
-        let scoreTag = '<span>Hyvää<br> sait <p>'+ userScore + questions.length +'pistettä'+'</p></span>'
+        let scoreTag = '<span>Hyvää,<br> sait <p>'+ userScore + questions.length +'pistettä'+'</p></span>'
         scoreText.innerHTML = scoreTag;
     }
     else{ // if user scored less than 1
-        let scoreTag = '<span>Voi ei <br>sait vaan <p>'+ userScore + questions.length +'pistettä'+'</p></span>';
+        let scoreTag = '<span>Voi ei, <br>sait vaan <p>'+ userScore + questions.length +'pistettä'+'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
 }
