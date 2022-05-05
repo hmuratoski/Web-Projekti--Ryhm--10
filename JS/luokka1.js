@@ -57,7 +57,7 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {
-    startButton.innerText = 'Käynistä uudelleen'
+    startButton.innerText = 'Aloita alusta'
     startButton.classList.remove('hide')
   }
 }
