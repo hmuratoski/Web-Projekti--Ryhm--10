@@ -1,4 +1,3 @@
-
 const startButton = document.getElementById("start-btn")
 const nextButton = document.getElementById("next-btn")
 const questionContainerElement = document.getElementById
@@ -6,7 +5,7 @@ const questionContainerElement = document.getElementById
 const questionElement = document.getElementById("question")
 const answerButtonsElement = document.getElementById("answer-buttons")
 
-let shuffledQuestions, currentQuestionsIndex
+let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener("click", startGame)
 nextButton.addEventListener("click" , () => {
@@ -25,14 +24,15 @@ setNextQuestion()
 
 
 function setNextQuestion() {
-showQuestion(shuffledQuestions[currentQuestionsIndex])
+    resetState()
+    showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
 function showQuestion(question){
-    questionContainerElement.innerHTML = question.question
-    question.answer.forEach(answer => {
+    questionElement.innerHTML = question.question
+    question.answers.forEach(answer => {
         const button = document.createElement("button")
-        button.innerHTML = answer.text 
+        button.innerText = answer.text 
         button.classList.add("btn")
         if (answer, correct) {
             button.dataset.correct = answer, correct
@@ -42,7 +42,7 @@ function showQuestion(question){
     })
 }
 
-function resetStarte() {
+function resetState() {
     nextButton.classList.add("hide")
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild
@@ -78,12 +78,13 @@ function clearStatusClass(element){
     element.classList.remove("correct")
     element.classList.remove("wrong")
 }
-const questions =  [
+const questions = [
     {
-        question: "Mikä on Suomen pääkaupunki?" ,
-        answers: [
-            { text: "Helsinki", correct: true }
-            {text: "Kuopio", correct: false }
+        question: "Mikä on Suomen pääkaupunki?",
+        answer: [
+            { text: "Helsinki", correct: true },
+            { text: "Kuopio", correct: false }
         ]
     }
 ]
+
