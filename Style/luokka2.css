@@ -145,8 +145,8 @@ a.article:hover {
       font-size: 85px;
       font-weight: bold;
       font-family: 'Poppins', sans-serif;
-      color: #416916;
-      text-shadow: 2px 1px white;
+      color: orange;
+      text-shadow: 5px 5px black;
       margin-top: 15px;
       margin-bottom: 10px;
 
