@@ -70,7 +70,7 @@
       resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     }
   
-    const quizContainer = document.getElementById('quiz');
+    const quizContainer = document.getElementById('quiz1');
     const resultsContainer = document.getElementById('results');
     const submitButton = document.getElementById('submit');
     const myQuestions = [
