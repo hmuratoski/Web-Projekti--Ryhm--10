@@ -394,6 +394,27 @@ footer button.show{
     color: #fff;
     background: #416916;
 }
+
+/*HOOVERIT*/
+
+.info_box:hover{
+    -webkit-box-shadow: 5px 5px 5px 5px #036040;
+    box-shadow:  5px 5px 5px 5px #036040; 
+}
+.quiz_box:hover{
+    -webkit-box-shadow: 5px 5px 5px 5px #036040;
+    box-shadow:  5px 5px 5px 5px #036040;   
+}
+.result_box:hover{
+    -webkit-box-shadow: 5px 5px 5px 5px #036040;
+    box-shadow:  5px 5px 5px 5px #036040;  
+}
+.start_btn:hover {
+
+    -webkit-box-shadow: 5px 5px 5px 5px #036040;;
+    box-shadow: 5px 5px 5px 5px #036040;;
+
+}
 /* ---------------------------------------------------
   MEDIA QUERY --MOBILE!
 ----------------------------------------------------- */
