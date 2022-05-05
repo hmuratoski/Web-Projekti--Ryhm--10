@@ -104,7 +104,7 @@ const questions = [
           ]
         },
         {
-          question: 'Mikä jäästä tulee kun se sulaa?',
+          question: 'Mitä jäästä tulee kun se sulaa?',
           answers: [
             { text: 'lunta', correct: false },
             { text: 'vettä', correct: true }
